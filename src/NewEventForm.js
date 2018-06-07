@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class NewEventForm extends Component {
   constructor(props){
     super(props);
 
-    this.state = { name: '', description: ''};
+    this.state = { name: '', description: '', date: '', time: ''};
   }
   
   render() {
@@ -19,6 +18,14 @@ class NewEventForm extends Component {
       <textarea
         value={this.state.description}
         onChange={(e) => this.setState({description: e.target.value})} />
+      <br/>
+      <input type="date"
+      value={this.state.date}
+      onChange={(e) => this.setState({date: e.target.value})} />
+      <br/>
+      <input type="time"
+      value={this.state.time}
+      onChange={(e) => this.setState({time: e.target.value})} />
       </form>
     );
   }
