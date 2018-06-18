@@ -6,6 +6,7 @@ class EventList extends Component {
     super(props);
   }
   
+  
   render() {
     return (
       <br/> 
@@ -14,3 +15,5 @@ class EventList extends Component {
 }
 
 export default EventList;
+
+
