@@ -1,0 +1,1 @@
+export const CRIAR_NOVO_EVENTO = 'CRIAR_NOVO_EVENTO';
